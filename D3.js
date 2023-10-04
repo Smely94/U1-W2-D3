@@ -170,7 +170,7 @@ console.log(eyeColor);
 
 let crewMass = 0;
 
-while (crewMass < 1500) {
+while (crewMass < 2000) {
   crewMass++;
 }
 
