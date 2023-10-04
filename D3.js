@@ -145,22 +145,24 @@ const eyeColor = { blue: [], yellow: [], brown: [], red: [], "blue-gray": [] };
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-switch (true) {
-  case starWarsCharacters.eye_color === "blue":
-    console.log((eyeColor.blue = starWarsCharacters.name));
-    break;
-  case starWarsCharacters.eye_color === "yellow":
-    console.log((eyeColor.yellow = starWarsCharacters.name));
-    break;
-  case starWarsCharacters.eye_color === "brown":
-    console.log((eyeColor.brown = starWarsCharacters.name));
-    break;
-  case starWarsCharacters.eye_color === "red":
-    console.log((eyeColor.red = starWarsCharacters.name));
-    break;
-  case starWarsCharacters.eye_color === "blue-gray":
-    console.log((eyeColor.yellow = starWarsCharacters.name));
-    break;
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  switch (starWarsCharacters[i].eye_color) {
+    case "blue":
+      eyeColor.blue.push(starWarsCharacters[i]);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i]);
+      break;
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i]);
+      break;
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i]);
+      break;
+    case "blue-gray":
+      eyeColor["blue-gray"].push(starWarsCharacters[i]);
+      break;
+  }
 }
 console.log(eyeColor);
 
